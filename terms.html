@@ -28,31 +28,23 @@
             background-color: #ffffff;
             color: #000000;
         }
-        .app {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        .header {
-            padding: 40px 15% 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .header a {
-            display: block;
-        }
-        .header img {
-            width: 40px;
-            height: 40px;
-            transition: opacity 0.2s;
-        }
         .content {
-            flex: 1;
             max-width: 600px;
             margin: 0 auto;
-            padding: 24px;
-            width: 100%;
+            padding: 40px 24px;
+        }
+        .back {
+            display: inline-block;
+            margin-bottom: 24px;
+        }
+        .back img {
+            width: 40px;
+            height: 40px;
+            opacity: 0.3;
+            transition: opacity 0.2s;
+        }
+        .back img:hover {
+            opacity: 0.5;
         }
         h1 {
             font-size: 24px;
@@ -85,55 +77,45 @@
     </style>
 </head>
 <body>
-    <div class="app">
-        <header class="header">
-            <a href="/terms.html">
-                <img src="termsicon.png" alt="Terms" style="opacity: 1;">
-            </a>
-            <a href="/">
-                <img src="homeicon.png" alt="Home" style="opacity: 0.3;">
-            </a>
-            <a href="/privacy.html">
-                <img src="privacyicon.png" alt="Privacy" style="opacity: 0.3;">
-            </a>
-        </header>
+    <div class="content">
+        <a href="/" class="back">
+            <img src="OP logo.svg" alt="Back to Home">
+        </a>
         
-        <div class="content">
-            <h1>Terms of Service</h1>
-            <p class="updated">Last updated: January 25, 2026</p>
-            
-            <h2>The basics</h2>
-            <p>One Post is a text-based social app. By using it, you agree to these terms.</p>
-            
-            <h2>Rules</h2>
-            <ol>
-                <li>You must be 18 or older to use One Post.</li>
-                <li>Don't post illegal content.</li>
-                <li>Don't harass, threaten, or abuse other users.</li>
-                <li>Don't spam or send unsolicited messages in bulk.</li>
-                <li>Don't impersonate others.</li>
-                <li>Don't post content that sexualises minors.</li>
-                <li>Don't use One Post to promote violence or hatred.</li>
-            </ol>
-            
-            <h2>Your content</h2>
-            <p>You own what you write. By posting, you give us permission to display it to other users. That's it.</p>
-            
-            <h2>Enforcement</h2>
-            <p>We can remove content or block devices that violate these rules. We don't monitor messages, but we act on reports.</p>
-            
-            <h2>No warranty</h2>
-            <p>One Post is provided as-is. We don't guarantee uptime, message delivery, or that you'll find love.</p>
-            
-            <h2>Liability</h2>
-            <p>We're not responsible for interactions between users. Be smart, be safe, meet in public places.</p>
-            
-            <h2>Changes</h2>
-            <p>We may update these terms. Continued use means you accept the changes.</p>
-            
-            <h2>Contact</h2>
-            <p>Problems? Email issues@onepost.ink</p>
-        </div>
+        <h1>Terms of Service</h1>
+        <p class="updated">Last updated: January 25, 2026</p>
+        
+        <h2>The basics</h2>
+        <p>One Post is a text-based social app. By using it, you agree to these terms.</p>
+        
+        <h2>Rules</h2>
+        <ol>
+            <li>You must be 18 or older to use One Post.</li>
+            <li>Don't post illegal content.</li>
+            <li>Don't harass, threaten, or abuse other users.</li>
+            <li>Don't spam or send unsolicited messages in bulk.</li>
+            <li>Don't impersonate others.</li>
+            <li>Don't post content that sexualises minors.</li>
+            <li>Don't use One Post to promote violence or hatred.</li>
+        </ol>
+        
+        <h2>Your content</h2>
+        <p>You own what you write. By posting, you give us permission to display it to other users. That's it.</p>
+        
+        <h2>Enforcement</h2>
+        <p>We can remove content or block devices that violate these rules. We don't monitor messages, but we act on reports.</p>
+        
+        <h2>No warranty</h2>
+        <p>One Post is provided as-is. We don't guarantee uptime, message delivery, or that you'll find love.</p>
+        
+        <h2>Liability</h2>
+        <p>We're not responsible for interactions between users. Be smart, be safe, meet in public places.</p>
+        
+        <h2>Changes</h2>
+        <p>We may update these terms. Continued use means you accept the changes.</p>
+        
+        <h2>Contact</h2>
+        <p>Problems? Email issues@onepost.ink</p>
     </div>
 </body>
 </html>
