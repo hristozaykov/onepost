@@ -38,4 +38,4 @@ We may update these terms. Continued use means you accept the changes.
 
 ## Contact
 
-Problems? Email report@onepost.ink
+Problems? Email issues@onepost.ink
