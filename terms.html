@@ -28,24 +28,31 @@
             background-color: #ffffff;
             color: #000000;
         }
+        .header {
+            padding: 40px 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+        }
+        .header a {
+            display: block;
+        }
+        .header img {
+            height: 50px;
+            width: auto;
+            transition: opacity 0.2s;
+        }
+        .header .inactive {
+            opacity: 0.3;
+        }
+        .header .inactive:hover {
+            opacity: 1;
+        }
         .content {
             max-width: 600px;
             margin: 0 auto;
-            padding: 40px 24px;
-        }
-        .back {
-            display: block;
-            text-align: center;
-            margin-bottom: 24px;
-        }
-        .back img {
-            height: 50px;
-            width: auto;
-            opacity: 0.3;
-            transition: opacity 0.2s;
-        }
-        .back img:hover {
-            opacity: 0.5;
+            padding: 0 24px 40px;
         }
         h1 {
             font-size: 24px;
@@ -78,11 +85,19 @@
     </style>
 </head>
 <body>
-    <div class="content">
-        <a href="/" class="back">
-            <img src="homeicon.png" alt="Back to Home">
+    <header class="header">
+        <a href="/terms.html">
+            <img src="termsicon.png" alt="Terms">
         </a>
-        
+        <a href="/">
+            <img src="homeicon.png" alt="Home" class="inactive">
+        </a>
+        <a href="/privacy.html">
+            <img src="privacyicon.png" alt="Privacy" class="inactive">
+        </a>
+    </header>
+    
+    <div class="content">
         <h1>Terms of Service</h1>
         <p class="updated">Last updated: January 25, 2026</p>
         
