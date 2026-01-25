@@ -28,31 +28,23 @@
             background-color: #ffffff;
             color: #000000;
         }
-        .app {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        .header {
-            padding: 40px 15% 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .header a {
-            display: block;
-        }
-        .header img {
-            width: 40px;
-            height: 40px;
-            transition: opacity 0.2s;
-        }
         .content {
-            flex: 1;
             max-width: 600px;
             margin: 0 auto;
-            padding: 24px;
-            width: 100%;
+            padding: 40px 24px;
+        }
+        .back {
+            display: inline-block;
+            margin-bottom: 24px;
+        }
+        .back img {
+            width: 40px;
+            height: 40px;
+            opacity: 0.3;
+            transition: opacity 0.2s;
+        }
+        .back img:hover {
+            opacity: 0.5;
         }
         h1 {
             font-size: 24px;
@@ -88,79 +80,69 @@
     </style>
 </head>
 <body>
-    <div class="app">
-        <header class="header">
-            <a href="/terms.html">
-                <img src="termsicon.png" alt="Terms" style="opacity: 0.3;">
-            </a>
-            <a href="/">
-                <img src="homeicon.png" alt="Home" style="opacity: 0.3;">
-            </a>
-            <a href="/privacy.html">
-                <img src="privacyicon.png" alt="Privacy" style="opacity: 1;">
-            </a>
-        </header>
+    <div class="content">
+        <a href="/" class="back">
+            <img src="OP logo.svg" alt="Back to Home">
+        </a>
         
-        <div class="content">
-            <h1>Privacy Policy</h1>
-            <p class="updated">Last updated: January 25, 2026</p>
-            
-            <h2>What we collect</h2>
-            <ul>
-                <li><strong>Gender, age, location</strong>: You provide these when you start using the app.</li>
-                <li><strong>Posts</strong>: The text you write in your post.</li>
-                <li><strong>Messages</strong>: DMs you send to other users.</li>
-                <li><strong>Device ID</strong>: A random string generated on your phone. It's not linked to your identity.</li>
-            </ul>
-            
-            <h2>What we don't collect</h2>
-            <ul>
-                <li>Your name</li>
-                <li>Your email</li>
-                <li>Your phone number</li>
-                <li>Your photos</li>
-                <li>Your contacts</li>
-                <li>Your location (GPS)</li>
-                <li>Analytics or tracking data</li>
-                <li>Cookies (it's an app, not a website)</li>
-            </ul>
-            
-            <h2>How we store data</h2>
-            <ul>
-                <li>Posts and pending messages are stored on AWS servers in the EU.</li>
-                <li>Your message history is stored locally on your device.</li>
-                <li>We don't have access to your local message history.</li>
-            </ul>
-            
-            <h2>How long we keep data</h2>
-            <ul>
-                <li>Posts stay until you replace them with a new post.</li>
-                <li>Messages are deleted from our server once delivered to the recipient.</li>
-                <li>Your device ID and profile stay until you reset the app.</li>
-            </ul>
-            
-            <h2>How to delete your data</h2>
-            <p>Tap the <strong>Reset</strong> button in the app. This deletes your post from our server and clears all local data. Your device gets a new ID.</p>
-            
-            <h2>Who sees your data</h2>
-            <ul>
-                <li>Your post: Anyone using the app.</li>
-                <li>Your messages: Only the person you send them to.</li>
-                <li>We don't sell or share data with third parties.</li>
-            </ul>
-            
-            <h2>Age requirement</h2>
-            <p>One Post is for users 18 and older. We don't knowingly collect data from minors.</p>
-            
-            <h2>Security</h2>
-            <p>We use HTTPS for all data transmission. Messages are not end-to-end encrypted.</p>
-            
-            <h2>Changes</h2>
-            <p>We may update this policy. Continued use means you accept the changes.</p>
-            
-            <h2>Contact</h2>
-            <p>Questions? Email issues@onepost.ink</p>
-        </div>
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: January 25, 2026</p>
+        
+        <h2>What we collect</h2>
+        <ul>
+            <li><strong>Gender, age, location</strong>: You provide these when you start using the app.</li>
+            <li><strong>Posts</strong>: The text you write in your post.</li>
+            <li><strong>Messages</strong>: DMs you send to other users.</li>
+            <li><strong>Device ID</strong>: A random string generated on your phone. It's not linked to your identity.</li>
+        </ul>
+        
+        <h2>What we don't collect</h2>
+        <ul>
+            <li>Your name</li>
+            <li>Your email</li>
+            <li>Your phone number</li>
+            <li>Your photos</li>
+            <li>Your contacts</li>
+            <li>Your location (GPS)</li>
+            <li>Analytics or tracking data</li>
+            <li>Cookies (it's an app, not a website)</li>
+        </ul>
+        
+        <h2>How we store data</h2>
+        <ul>
+            <li>Posts and pending messages are stored on AWS servers in the EU.</li>
+            <li>Your message history is stored locally on your device.</li>
+            <li>We don't have access to your local message history.</li>
+        </ul>
+        
+        <h2>How long we keep data</h2>
+        <ul>
+            <li>Posts stay until you replace them with a new post.</li>
+            <li>Messages are deleted from our server once delivered to the recipient.</li>
+            <li>Your device ID and profile stay until you reset the app.</li>
+        </ul>
+        
+        <h2>How to delete your data</h2>
+        <p>Tap the <strong>Reset</strong> button in the app. This deletes your post from our server and clears all local data. Your device gets a new ID.</p>
+        
+        <h2>Who sees your data</h2>
+        <ul>
+            <li>Your post: Anyone using the app.</li>
+            <li>Your messages: Only the person you send them to.</li>
+            <li>We don't sell or share data with third parties.</li>
+        </ul>
+        
+        <h2>Age requirement</h2>
+        <p>One Post is for users 18 and older. We don't knowingly collect data from minors.</p>
+        
+        <h2>Security</h2>
+        <p>We use HTTPS for all data transmission. Messages are not end-to-end encrypted.</p>
+        
+        <h2>Changes</h2>
+        <p>We may update this policy. Continued use means you accept the changes.</p>
+        
+        <h2>Contact</h2>
+        <p>Questions? Email issues@onepost.ink</p>
     </div>
 </body>
 </html>
