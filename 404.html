@@ -2,11 +2,14 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;URL='/'">
     <script>
         const path = window.location.pathname;
-        if (path === '/terms' || path === '/terms/' || path === '/privacy' || path === '/privacy/') {
-            window.location.href = '/' + '?redirect=' + path;
+        if (path === '/terms' || path === '/terms/') {
+            window.location.href = '/terms.html';
+        } else if (path === '/privacy' || path === '/privacy/') {
+            window.location.href = '/privacy.html';
+        } else {
+            window.location.href = '/';
         }
     </script>
 </head>
