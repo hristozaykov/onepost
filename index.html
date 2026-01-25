@@ -39,46 +39,40 @@
             background-color: #ffffff;
             color: #000000;
         }
-        .app {
-            height: 100%;
+        .header {
+            padding: 40px 0 20px;
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-        .nav {
-            display: flex;
-            align-items: center;
             gap: 24px;
         }
-        .nav a {
+        .header a {
             display: block;
         }
-        .nav a img {
+        .header img {
             height: 50px;
             width: auto;
-            opacity: 0.3;
             transition: opacity 0.2s;
         }
-        .nav a img:hover {
-            opacity: 0.5;
+        .header .inactive {
+            opacity: 0.3;
         }
-        .logo {
-            height: 100px;
-            width: auto;
+        .header .inactive:hover {
+            opacity: 1;
         }
     </style>
 </head>
 <body>
-    <div class="app">
-        <div class="nav">
-            <a href="/terms.html">
-                <img src="termsicon.png" alt="Terms">
-            </a>
-            <img class="logo" src="homeicon.png" alt="One Post">
-            <a href="/privacy.html">
-                <img src="privacyicon.png" alt="Privacy">
-            </a>
-        </div>
-    </div>
+    <header class="header">
+        <a href="/terms.html">
+            <img src="termsicon.png" alt="Terms" class="inactive">
+        </a>
+        <a href="/">
+            <img src="homeicon.png" alt="Home">
+        </a>
+        <a href="/privacy.html">
+            <img src="privacyicon.png" alt="Privacy" class="inactive">
+        </a>
+    </header>
 </body>
 </html>
