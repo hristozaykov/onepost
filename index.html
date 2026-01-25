@@ -40,29 +40,27 @@
             color: #000000;
         }
         .app {
-            min-height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        .header {
-            padding: 40px 15% 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .header a {
-            display: block;
-        }
-        .header img {
-            width: 40px;
-            height: 40px;
-            transition: opacity 0.2s;
-        }
-        .content {
-            flex: 1;
+            height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        .nav a {
+            display: block;
+        }
+        .nav img {
+            width: 40px;
+            height: 40px;
+            opacity: 0.3;
+            transition: opacity 0.2s;
+        }
+        .nav img:hover {
+            opacity: 0.5;
         }
         .logo {
             width: 100px;
@@ -72,20 +70,14 @@
 </head>
 <body>
     <div class="app">
-        <header class="header">
+        <div class="nav">
             <a href="/terms.html">
-                <img src="termsicon.png" alt="Terms" style="opacity: 0.3;">
+                <img src="termsicon.png" alt="Terms">
             </a>
-            <a href="/">
-                <img src="homeicon.png" alt="Home" style="opacity: 1;">
-            </a>
-            <a href="/privacy.html">
-                <img src="privacyicon.png" alt="Privacy" style="opacity: 0.3;">
-            </a>
-        </header>
-        
-        <div class="content">
             <img class="logo" src="OP logo.svg" alt="One Post">
+            <a href="/privacy.html">
+                <img src="privacyicon.png" alt="Privacy">
+            </a>
         </div>
     </div>
 </body>
