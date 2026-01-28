@@ -28,10 +28,10 @@
             background-color: #ffffff;
             color: #000000;
             scrollbar-width: none;
-}
-body::-webkit-scrollbar {
-    display: none;
-}
+        }
+        body::-webkit-scrollbar {
+            display: none;
+        }
         .header {
             padding: 40px 0 20px;
             display: flex;
@@ -56,38 +56,60 @@ body::-webkit-scrollbar {
         .content {
             max-width: 600px;
             margin: 0 auto;
-            padding: 0 24px 40px;
+            padding: 0 16px 40px;
         }
-        h1 {
-            font-size: 24px;
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+            border: 1px solid #f0f0f0;
+        }
+        .card-title {
+            font-size: 13px;
             font-weight: 500;
-            margin-bottom: 8px;
+            color: #000000;
+            margin: 0 0 12px 0;
+            padding: 4px 8px;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            display: inline-block;
         }
-        h2 {
+        .card-text {
+            font-size: 16px;
+            font-weight: 400;
+            color: #000000;
+            line-height: 22px;
+            margin: 0;
+        }
+        .card-text ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .card-text li {
+            margin-bottom: 8px;
+            line-height: 22px;
+        }
+        .card-text li:last-child {
+            margin-bottom: 0;
+        }
+        .card-text strong {
+            font-weight: 500;
+        }
+        .page-title {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        .page-title h1 {
             font-size: 16px;
             font-weight: 500;
-            margin-top: 28px;
-            margin-bottom: 12px;
+            margin: 0 0 4px 0;
         }
-        p, li {
-            font-size: 15px;
-            font-weight: 400;
-            color: #333333;
-            line-height: 1.6;
-        }
-        ul, ol {
-            padding-left: 24px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        strong {
-            font-weight: 500;
-        }
-        .updated {
+        .page-title .updated {
             font-size: 13px;
-            color: #666666;
-            margin-bottom: 24px;
+            color: #aaaaaa;
+            margin: 0;
         }
     </style>
 </head>
@@ -105,64 +127,96 @@ body::-webkit-scrollbar {
     </header>
     
     <div class="content">
-        <h1>Privacy Policy</h1>
-        <p class="updated">Last updated: January 25, 2026</p>
+        <div class="page-title">
+            <h1>Privacy Policy</h1>
+            <p class="updated">Last updated: January 25, 2026</p>
+        </div>
         
-        <h2>What We Collect</h2>
-        <ul>
-            <li><strong>Gender, age, location</strong>: You provide these when you start using the app.</li>
-            <li><strong>Posts</strong>: The text you write in your post.</li>
-            <li><strong>Messages</strong>: DMs you send to other users.</li>
-            <li><strong>Device ID</strong>: A random string generated on your phone. It's not linked to your identity.</li>
-        </ul>
+        <div class="card">
+            <div class="card-title">What We Collect</div>
+            <div class="card-text">
+                <ul>
+                    <li><strong>Gender, age, location</strong>: You provide these when you start using the app.</li>
+                    <li><strong>Posts</strong>: The text you write in your post.</li>
+                    <li><strong>Messages</strong>: DMs you send to other users.</li>
+                    <li><strong>Device ID</strong>: A random string generated on your phone. It's not linked to your identity.</li>
+                </ul>
+            </div>
+        </div>
         
-        <h2>What We Don't Collect</h2>
-        <ul>
-            <li>Your name</li>
-            <li>Your email</li>
-            <li>Your phone number</li>
-            <li>Your photos</li>
-            <li>Your contacts</li>
-            <li>Your location (GPS)</li>
-            <li>Analytics or tracking data</li>
-            <li>Cookies</li>
-        </ul>
+        <div class="card">
+            <div class="card-title">What We Don't Collect</div>
+            <div class="card-text">
+                <ul>
+                    <li>Your name</li>
+                    <li>Your email</li>
+                    <li>Your phone number</li>
+                    <li>Your photos</li>
+                    <li>Your contacts</li>
+                    <li>Your location (GPS)</li>
+                    <li>Analytics or tracking data</li>
+                    <li>Cookies</li>
+                </ul>
+            </div>
+        </div>
         
-        <h2>How We Store Data</h2>
-        <ul>
-            <li>Posts and pending messages are stored on AWS servers in Europe.</li>
-            <li>Your message history is stored locally on your device.</li>
-            <li>We don't have access to your local message history.</li>
-        </ul>
+        <div class="card">
+            <div class="card-title">How We Store Data</div>
+            <div class="card-text">
+                <ul>
+                    <li>Posts and pending messages are stored on AWS servers in Europe.</li>
+                    <li>Your message history is stored locally on your device.</li>
+                    <li>We don't have access to your local message history.</li>
+                </ul>
+            </div>
+        </div>
         
-        <h2>How Long We Keep Data</h2>
-        <ul>
-            <li>A post stays until you replace it with a new post.</li>
-            <li>Messages are deleted from our server once delivered to the recipient.</li>
-            <li>Your device ID and profile stay until you reset the app.</li>
-        </ul>
+        <div class="card">
+            <div class="card-title">How Long We Keep Data</div>
+            <div class="card-text">
+                <ul>
+                    <li>A post stays until you replace it with a new post.</li>
+                    <li>Messages are deleted from our server once delivered to the recipient.</li>
+                    <li>Your device ID and profile stay until you reset the app.</li>
+                </ul>
+            </div>
+        </div>
         
-        <h2>How To Delete Your Data</h2>
-        <p>Tap the <strong>Reset</strong> button in the app. This deletes your post from our server and clears all local data. Your device gets a new ID.</p>
+        <div class="card">
+            <div class="card-title">How To Delete Your Data</div>
+            <p class="card-text">Tap the <strong>Reset</strong> button in the app. This deletes your post from our server and clears all local data. Your device gets a new ID.</p>
+        </div>
         
-        <h2>Who Sees Your Data</h2>
-        <ul>
-            <li>Your post: Anyone using the app.</li>
-            <li>Your messages: Only the person you send them to.</li>
-            <li>We don't sell or share data with third parties.</li>
-        </ul>
+        <div class="card">
+            <div class="card-title">Who Sees Your Data</div>
+            <div class="card-text">
+                <ul>
+                    <li>Your post: Anyone using the app.</li>
+                    <li>Your messages: Only the person you send them to.</li>
+                    <li>We don't sell or share data with third parties.</li>
+                </ul>
+            </div>
+        </div>
         
-        <h2>Age Requirement</h2>
-        <p>One Post is for users 18 and older. We don't knowingly collect data from minors.</p>
+        <div class="card">
+            <div class="card-title">Age Requirement</div>
+            <p class="card-text">One Post is for users 18 and older. We don't knowingly collect data from minors.</p>
+        </div>
         
-        <h2>Security</h2>
-        <p>We use HTTPS for all data transmission. Messages are not end-to-end encrypted.</p>
+        <div class="card">
+            <div class="card-title">Security</div>
+            <p class="card-text">We use HTTPS for all data transmission. Messages are not end-to-end encrypted.</p>
+        </div>
         
-        <h2>Changes</h2>
-        <p>We may update this policy. Continued use means you accept the changes.</p>
+        <div class="card">
+            <div class="card-title">Changes</div>
+            <p class="card-text">We may update this policy. Continued use means you accept the changes.</p>
+        </div>
         
-        <h2>Contact</h2>
-        <p>Questions? Email issues@onepost.ink</p>
+        <div class="card">
+            <div class="card-title">Contact</div>
+            <p class="card-text">Questions? Email issues@onepost.ink</p>
+        </div>
     </div>
 </body>
 </html>
