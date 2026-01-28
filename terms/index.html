@@ -28,10 +28,10 @@
             background-color: #ffffff;
             color: #000000;
             scrollbar-width: none;
-}
-body::-webkit-scrollbar {
-    display: none;
-}
+        }
+        body::-webkit-scrollbar {
+            display: none;
+        }
         .header {
             padding: 40px 0 20px;
             display: flex;
@@ -56,35 +56,57 @@ body::-webkit-scrollbar {
         .content {
             max-width: 600px;
             margin: 0 auto;
-            padding: 0 24px 40px;
+            padding: 0 16px 40px;
         }
-        h1 {
-            font-size: 24px;
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+            border: 1px solid #f0f0f0;
+        }
+        .card-title {
+            font-size: 13px;
             font-weight: 500;
-            margin-bottom: 8px;
+            color: #000000;
+            margin: 0 0 12px 0;
+            padding: 4px 8px;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            display: inline-block;
         }
-        h2 {
+        .card-text {
+            font-size: 16px;
+            font-weight: 400;
+            color: #000000;
+            line-height: 22px;
+            margin: 0;
+        }
+        .card-text ol, .card-text ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .card-text li {
+            margin-bottom: 8px;
+            line-height: 22px;
+        }
+        .card-text li:last-child {
+            margin-bottom: 0;
+        }
+        .page-title {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        .page-title h1 {
             font-size: 16px;
             font-weight: 500;
-            margin-top: 28px;
-            margin-bottom: 12px;
+            margin: 0 0 4px 0;
         }
-        p, li {
-            font-size: 15px;
-            font-weight: 400;
-            color: #333333;
-            line-height: 1.6;
-        }
-        ul, ol {
-            padding-left: 24px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        .updated {
+        .page-title .updated {
             font-size: 13px;
-            color: #666666;
-            margin-bottom: 24px;
+            color: #aaaaaa;
+            margin: 0;
         }
     </style>
 </head>
@@ -102,40 +124,60 @@ body::-webkit-scrollbar {
     </header>
     
     <div class="content">
-        <h1>Terms of Service</h1>
-        <p class="updated">Last updated: January 25, 2026</p>
+        <div class="page-title">
+            <h1>Terms of Service</h1>
+            <p class="updated">Last updated: January 25, 2026</p>
+        </div>
         
-        <h2>The Basics</h2>
-        <p>One Post is a text-based social app. By using it, you agree to these terms.</p>
+        <div class="card">
+            <div class="card-title">The Basics</div>
+            <p class="card-text">One Post is a text-based social app. By using it, you agree to these terms.</p>
+        </div>
         
-        <h2>Rules</h2>
-        <ol>
-            <li>You must be 18 or older to use One Post.</li>
-            <li>Don't post illegal content.</li>
-            <li>Don't harass, threaten, or abuse other users.</li>
-            <li>Don't spam or send unsolicited messages in bulk.</li>
-            <li>Don't impersonate others.</li>
-            <li>Don't post content that sexualises minors.</li>
-            <li>Don't use One Post to promote violence or hatred.</li>
-        </ol>
+        <div class="card">
+            <div class="card-title">Rules</div>
+            <div class="card-text">
+                <ol>
+                    <li>You must be 18 or older to use One Post.</li>
+                    <li>Don't post illegal content.</li>
+                    <li>Don't harass, threaten, or abuse other users.</li>
+                    <li>Don't spam or send unsolicited messages in bulk.</li>
+                    <li>Don't impersonate others.</li>
+                    <li>Don't post content that sexualises minors.</li>
+                    <li>Don't use One Post to promote violence or hatred.</li>
+                </ol>
+            </div>
+        </div>
         
-        <h2>Your Content</h2>
-        <p>You own what you write. By posting, you give us permission to display it to other users.</p>
+        <div class="card">
+            <div class="card-title">Your Content</div>
+            <p class="card-text">You own what you write. By posting, you give us permission to display it to other users.</p>
+        </div>
         
-        <h2>Enforcement</h2>
-        <p>We can remove content or block devices that violate these rules. We don't monitor messages, but we act on reports.</p>
+        <div class="card">
+            <div class="card-title">Enforcement</div>
+            <p class="card-text">We can remove content or block devices that violate these rules. We don't monitor messages, but we act on reports.</p>
+        </div>
         
-        <h2>No Warranty</h2>
-        <p>One Post is provided as-is. We don't guarantee uptime or message delivery.</p>
+        <div class="card">
+            <div class="card-title">No Warranty</div>
+            <p class="card-text">One Post is provided as-is. We don't guarantee uptime or message delivery.</p>
+        </div>
         
-        <h2>Liability</h2>
-        <p>We're not responsible for interactions between users. Be smart and safe.</p>
+        <div class="card">
+            <div class="card-title">Liability</div>
+            <p class="card-text">We're not responsible for interactions between users. Be smart and safe.</p>
+        </div>
         
-        <h2>Changes</h2>
-        <p>We may update these terms. Continued use means you accept the changes.</p>
+        <div class="card">
+            <div class="card-title">Changes</div>
+            <p class="card-text">We may update these terms. Continued use means you accept the changes.</p>
+        </div>
         
-        <h2>Contact</h2>
-        <p>Problems? Email issues@onepost.ink</p>
+        <div class="card">
+            <div class="card-title">Contact</div>
+            <p class="card-text">Problems? Email issues@onepost.ink</p>
+        </div>
     </div>
 </body>
 </html>
