@@ -83,7 +83,8 @@
             line-height: 22px;
             margin: 0;
         }
-        .card-text ol, .card-text ul {
+        .card-text ol,
+        .card-text ul {
             margin: 0;
             padding-left: 20px;
         }
@@ -94,6 +95,20 @@
         .card-text li:last-child {
             margin-bottom: 0;
         }
+
+        /* link styling */
+        .card-text a {
+            color: #000;
+            text-decoration: underline;
+            transition: opacity 0.2s;
+        }
+        .card-text a:visited {
+            color: #000;
+        }
+        .card-text a:hover {
+            opacity: 0.6;
+        }
+
         .page-title {
             text-align: center;
             margin-bottom: 24px;
@@ -176,7 +191,10 @@
         
         <div class="card">
             <div class="card-title">Contact</div>
-            <p class="card-text">Problems? Email issues@onepost.ink</p>
+            <p class="card-text">
+                Problems? Email
+                <a href="mailto:issues@onepost.ink">issues@onepost.ink</a>
+            </p>
         </div>
     </div>
 </body>
