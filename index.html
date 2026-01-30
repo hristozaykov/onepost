@@ -34,10 +34,14 @@
         html, body {
             margin: 0;
             padding: 0;
-            height: 100%;
+            min-height: 100%;
             font-family: 'Red Hat Text', sans-serif;
             background-color: #ffffff;
             color: #000000;
+            scrollbar-width: none;
+        }
+        body::-webkit-scrollbar {
+            display: none;
         }
         .header {
             padding: 40px 0 20px;
@@ -60,6 +64,53 @@
         .header .inactive:hover {
             opacity: 1;
         }
+
+        /* terms-page container width */
+        .content {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0 16px 40px;
+        }
+
+        /* terms-page card style = your "writing box" */
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+            border: 1px solid #f0f0f0;
+        }
+
+        /* your text style from terms */
+        .card-text {
+            font-size: 16px;
+            font-weight: 400;
+            color: #000000;
+            line-height: 22px;
+            margin: 0;
+        }
+
+        /* new bits you asked for */
+        .center-image {
+            display: block;
+            margin: 8px auto 0;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .bottom-icons {
+            margin-top: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+        }
+        .bottom-icons img {
+            height: 44px;
+            width: auto;
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -74,5 +125,25 @@
             <img src="privacyicon.svg" alt="Privacy" class="inactive">
         </a>
     </header>
+
+    <div class="content">
+        <!-- writing box (static) -->
+        <div class="card">
+            <p class="card-text">
+                put your copy here. you can add more paragraphs like this:
+                <br><br>
+                second paragraph. etc.
+            </p>
+        </div>
+
+        <!-- centred image under the box -->
+        <img class="center-image" src="center-image.png" alt="">
+
+        <!-- left/right svgs under the image -->
+        <div class="bottom-icons">
+            <img src="left-icon.svg" alt="">
+            <img src="right-icon.svg" alt="">
+        </div>
+    </div>
 </body>
 </html>
