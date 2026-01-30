@@ -65,14 +65,12 @@
             opacity: 1;
         }
 
-        /* terms-page container width */
         .content {
             max-width: 600px;
             margin: 0 auto;
             padding: 0 16px 40px;
         }
 
-        /* terms-page card style = "writing box" */
         .card {
             background-color: #ffffff;
             border-radius: 12px;
@@ -92,7 +90,7 @@
 
         .center-image {
             display: block;
-            margin: 50px auto 30px;
+            margin: 50px auto 0;
             max-width: 100%;
             height: auto;
         }
@@ -108,6 +106,17 @@
             height: 44px;
             width: auto;
             display: block;
+        }
+
+        /* terms page title styles */
+        .page-title {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        .page-title h1 {
+            font-size: 16px;
+            font-weight: 500;
+            margin: 0 0 4px 0;
         }
     </style>
 </head>
@@ -125,7 +134,12 @@
     </header>
 
     <div class="content">
-        <!-- writing box (static) -->
+
+        <!-- page title -->
+        <div class="page-title">
+            <h1>Home</h1>
+        </div>
+
         <div class="card">
             <p class="card-text">
                 put your copy here. you can add more paragraphs like this:
@@ -134,13 +148,15 @@
             </p>
         </div>
 
-        <!-- centred image under the box -->
         <img class="center-image" src="center-image.png" alt="">
 
-        <!-- left/right svgs under the image -->
         <div class="bottom-icons">
-            <img src="left-icon.svg" alt="">
-            <img src="right-icon.svg" alt="">
+            <a href="/terms">
+                <img src="left-icon.svg" alt="Terms">
+            </a>
+            <a href="/privacy">
+                <img src="right-icon.svg" alt="Privacy">
+            </a>
         </div>
     </div>
 </body>
